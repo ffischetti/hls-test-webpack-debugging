@@ -1,10 +1,8 @@
 import React from 'react'
 import 'video.js/dist/video-js.css'
 import videojs from 'video.js'
-import 'videojs-contrib-hls.js'
-
-// import 'videojs-contrib-hls' // there's some webpack issue that prevents this from loading
-// import T from 'prop-types'
+// import 'videojs-contrib-hls.js' // only added this to ensure that the stream works
+import 'videojs-contrib-hls' // this is throwing an error "unexpected identifier" and on click of play, the spinner shows indefinitely
 
 export default class VideoJSPlayer extends React.Component {
 
